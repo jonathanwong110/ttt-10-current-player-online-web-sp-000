@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def turn_count(turn)
   move_count = []
   turn.each do |unit|
@@ -16,3 +17,8 @@ def current_player(board)
       return "O" 
     end 
 end 
+=======
+def current_player(board)
+   turn_count(board) % 2 == 0 ? "X" : "O"
+end
+>>>>>>> e20ff3e1f8bd1040b1255cc4ad23606fe1e3eb08
